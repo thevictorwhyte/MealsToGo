@@ -1,0 +1,492 @@
+[debug] [2022-12-08T12:28:18.096Z] ----------------------------------------------------------------------
+[debug] [2022-12-08T12:28:18.099Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2022-12-08T12:28:18.099Z] CLI Version:   11.17.0
+[debug] [2022-12-08T12:28:18.099Z] Platform:      darwin
+[debug] [2022-12-08T12:28:18.100Z] Node Version:  v16.18.1
+[debug] [2022-12-08T12:28:18.114Z] Time:          Thu Dec 08 2022 13:28:18 GMT+0100 (West Africa Standard Time)
+[debug] [2022-12-08T12:28:18.114Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-08T12:28:18.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-08T12:28:18.236Z] > authorizing via signed-in user (victordavidwhyte@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-08T12:28:18.929Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-08T12:28:18.930Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-08T12:28:18.947Z] [hub] writing locator at /var/folders/cp/lys9kk2918s1pwkjdqp_b6rm0000gp/T/hub-meals-to-go-749bd.json
+[debug] [2022-12-08T12:28:19.858Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-08T12:28:19.859Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-08T12:28:19.859Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-08T12:28:19.876Z] defaultcredentials: writing to file /Users/victorwhyte/.config/firebase/victordavidwhyte_gmail_com_application_default_credentials.json
+[debug] [2022-12-08T12:28:19.891Z] Setting GAC to /Users/victorwhyte/.config/firebase/victordavidwhyte_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/victorwhyte/.config/firebase/victordavidwhyte_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-08T12:28:19.893Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-749bd/adminSdkConfig [none]
+[debug] [2022-12-08T12:28:20.873Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-749bd/adminSdkConfig 200
+[debug] [2022-12-08T12:28:20.874Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-749bd/adminSdkConfig {"projectId":"meals-to-go-749bd","storageBucket":"meals-to-go-749bd.appspot.com"}
+[debug] [2022-12-08T12:28:21.073Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-08T12:28:21.082Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-08T12:28:21.082Z] Starting Emulator UI with command {"binary":"node","args":["/Users/victorwhyte/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/victorwhyte/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-08T12:28:21.971Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/victorwhyte/dev/projects/MealsToGo/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/victorwhyte/dev/projects/MealsToGo/functions\" for Cloud Functions..."}}
+[debug] [2022-12-08T12:28:22.244Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-08T12:28:26.387Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-08T12:28:26.387Z] Building nodejs source
+[debug] [2022-12-08T12:28:26.387Z] Analyzing nodejs backend spec
+[debug] [2022-12-08T12:28:26.394Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-08T12:28:27.008Z] Serving at port 9005
+
+[debug] [2022-12-08T12:28:27.823Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-08T12:28:27.849Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://127.0.0.1:5001/meals-to-go-749bd/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/meals-to-go-749bd/us-central1/geocode)."}}
+[info] ✔  functions[us-central1-placesNearby]: http function initialized (http://127.0.0.1:5001/meals-to-go-749bd/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/meals-to-go-749bd/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-08T12:28:39.197Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:28:39.198Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:28:39.198Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:28:39.201Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:28:39.203Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:28:39.253Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-12-08T12:28:39.254Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-12-08T12:28:41.237Z] [runtime-status] [68584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.238Z] [runtime-status] [68584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.238Z] [runtime-status] [68584] Found local functions config: /Users/victorwhyte/dev/projects/MealsToGo/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Found local functions config: /Users/victorwhyte/dev/projects/MealsToGo/functions/.runtimeconfig.json"}}
+[debug] [2022-12-08T12:28:41.238Z] [runtime-status] [68584] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-08T12:28:41.239Z] [runtime-status] [68584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.353Z] [runtime-status] [68584] Checked functions.config() {"config":{"google":{"key":"AIzaSyBALpbuyjevjykye1qemBn4WzGeF2mrHZE"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Checked functions.config() {\"config\":{\"google\":{\"key\":\"AIzaSyBALpbuyjevjykye1qemBn4WzGeF2mrHZE\"}}}"}}
+[debug] [2022-12-08T12:28:41.354Z] [runtime-status] [68584] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-08T12:28:41.355Z] [runtime-status] [68584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.357Z] [runtime-status] [68584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.358Z] [runtime-status] [68584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:28:41.358Z] [runtime-status] [68584] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-08T12:28:41.544Z] [runtime-status] [68584] Functions runtime initialized. {"cwd":"/Users/victorwhyte/dev/projects/MealsToGo/functions","node_version":"16.18.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Functions runtime initialized. {\"cwd\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions\",\"node_version\":\"16.18.1\"}"}}
+[debug] [2022-12-08T12:28:41.545Z] [runtime-status] [68584] Listening to port: /var/folders/cp/lys9kk2918s1pwkjdqp_b6rm0000gp/T/fire_emu_853d7b0dee16ce98.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [68584] Listening to port: /var/folders/cp/lys9kk2918s1pwkjdqp_b6rm0000gp/T/fire_emu_853d7b0dee16ce98.sock"}}
+[debug] [2022-12-08T12:28:41.605Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:28:41.605Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:28:41.606Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:28:41.616Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:28:41.616Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 3.56111ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 3.56111ms"}}
+[debug] [2022-12-08T12:30:31.627Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:30:31.647Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:30:31.654Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:30:31.669Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:30:31.671Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:30:31.672Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:30:31.672Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 7.457532ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 7.457532ms"}}
+[debug] [2022-12-08T12:30:31.766Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:30:31.766Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:47:28.174Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:47:28.183Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:47:28.184Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:47:28.241Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:47:28.242Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:47:28.243Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:47:28.243Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 10.35398ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 10.35398ms"}}
+[debug] [2022-12-08T12:47:28.331Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:47:28.332Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:47:40.191Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:47:40.191Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:47:40.191Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:47:40.199Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:47:40.199Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:47:40.200Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:47:40.200Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:47:40.225Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:47:40.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 7.341103ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 7.341103ms"}}
+[debug] [2022-12-08T12:47:55.660Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:47:55.663Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:47:55.664Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:47:55.990Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:47:55.991Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:47:55.992Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:47:55.995Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 5.743145ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 5.743145ms"}}
+[debug] [2022-12-08T12:47:56.038Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:47:56.039Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:47:57.395Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:47:57.396Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:47:57.396Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:47:57.406Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:47:57.406Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:47:57.406Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:47:57.407Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:47:57.423Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:47:57.423Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 6.585678ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 6.585678ms"}}
+[debug] [2022-12-08T12:48:04.198Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:48:04.206Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:48:04.206Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:48:04.240Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:48:04.240Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:48:04.240Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:48:04.241Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 4.260337ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 4.260337ms"}}
+[debug] [2022-12-08T12:48:04.277Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:48:04.277Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:49:48.555Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:49:48.568Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:49:48.761Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:49:48.798Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:49:48.800Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:49:48.800Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:49:48.800Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 5.416982ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 5.416982ms"}}
+[debug] [2022-12-08T12:49:48.882Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:49:48.883Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:52:34.244Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:52:34.249Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:52:34.249Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:52:34.272Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:52:34.276Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:52:34.278Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:52:34.278Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 8.889577ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 8.889577ms"}}
+[debug] [2022-12-08T12:52:34.652Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:52:34.652Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:53:33.722Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:53:33.724Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:53:33.726Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:53:33.732Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:53:33.732Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:53:33.732Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:53:33.732Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:53:33.757Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:53:33.759Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 6.865605ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 6.865605ms"}}
+[debug] [2022-12-08T12:55:05.354Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:55:05.359Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:55:05.359Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:55:05.376Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:55:05.377Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true"}}
+[debug] [2022-12-08T12:55:05.378Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:55:05.378Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:55:05.407Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:55:05.412Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 13.175665ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 13.175665ms"}}
+[debug] [2022-12-08T12:55:39.290Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:55:39.290Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:55:39.290Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:55:39.296Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:55:39.297Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:55:39.297Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:55:39.297Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:55:39.309Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:55:39.309Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.797158ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.797158ms"}}
+[debug] [2022-12-08T12:55:39.449Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:55:39.464Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:55:39.465Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:55:39.516Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:55:39.521Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:55:39.661Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:55:39.663Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-12-08T12:55:43.178Z] [runtime-status] [70958] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.183Z] [runtime-status] [70958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.185Z] [runtime-status] [70958] Found local functions config: /Users/victorwhyte/dev/projects/MealsToGo/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Found local functions config: /Users/victorwhyte/dev/projects/MealsToGo/functions/.runtimeconfig.json"}}
+[debug] [2022-12-08T12:55:43.186Z] [runtime-status] [70958] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-08T12:55:43.188Z] [runtime-status] [70958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.333Z] [runtime-status] [70958] Checked functions.config() {"config":{"google":{"key":"AIzaSyBALpbuyjevjykye1qemBn4WzGeF2mrHZE"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Checked functions.config() {\"config\":{\"google\":{\"key\":\"AIzaSyBALpbuyjevjykye1qemBn4WzGeF2mrHZE\"}}}"}}
+[debug] [2022-12-08T12:55:43.334Z] [runtime-status] [70958] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-08T12:55:43.335Z] [runtime-status] [70958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.338Z] [runtime-status] [70958] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.339Z] [runtime-status] [70958] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-08T12:55:43.340Z] [runtime-status] [70958] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-08T12:55:43.722Z] [runtime-status] [70958] Functions runtime initialized. {"cwd":"/Users/victorwhyte/dev/projects/MealsToGo/functions","node_version":"16.18.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Functions runtime initialized. {\"cwd\":\"/Users/victorwhyte/dev/projects/MealsToGo/functions\",\"node_version\":\"16.18.1\"}"}}
+[debug] [2022-12-08T12:55:43.723Z] [runtime-status] [70958] Listening to port: /var/folders/cp/lys9kk2918s1pwkjdqp_b6rm0000gp/T/fire_emu_3b9c4eac28afdbe0.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [70958] Listening to port: /var/folders/cp/lys9kk2918s1pwkjdqp_b6rm0000gp/T/fire_emu_3b9c4eac28afdbe0.sock"}}
+[debug] [2022-12-08T12:55:44.059Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:55:44.059Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:55:44.059Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:55:44.072Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:55:44.072Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 4.947989ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 4.947989ms"}}
+[debug] [2022-12-08T12:55:52.694Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:55:52.695Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:55:52.695Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=london&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:55:52.699Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:55:52.699Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=london&mock=true, mapping to path=/?city=london&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=london&mock=true, mapping to path=/?city=london&mock=true"}}
+[debug] [2022-12-08T12:55:52.699Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:55:52.699Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:55:52.710Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:55:52.711Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 5.636952ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 5.636952ms"}}
+[debug] [2022-12-08T12:56:05.747Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:56:05.748Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:56:05.748Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:56:05.756Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:56:05.761Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:56:05.765Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:56:05.766Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:56:05.823Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:56:05.826Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 25.229052ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 25.229052ms"}}
+[debug] [2022-12-08T12:56:05.922Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:56:05.926Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:56:05.945Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:56:05.965Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:56:05.966Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:56:05.966Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:56:05.966Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:56:05.983Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:56:05.983Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 6.738148ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 6.738148ms"}}
+[debug] [2022-12-08T12:57:24.203Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:57:24.204Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:57:24.204Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:57:24.212Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:24.212Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:57:24.212Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:57:24.213Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:57:24.288Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:57:24.288Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 13.687659ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 13.687659ms"}}
+[debug] [2022-12-08T12:57:24.307Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:57:24.308Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:57:24.309Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:57:24.313Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:24.314Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:57:24.314Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:57:24.314Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T12:57:24.363Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:57:24.363Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 12.660002ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 12.660002ms"}}
+[debug] [2022-12-08T12:57:25.989Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:57:25.989Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:57:25.989Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:57:25.994Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:25.994Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:57:25.995Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:57:25.995Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:57:26.002Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:57:26.003Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 4.758304ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 4.758304ms"}}
+[debug] [2022-12-08T12:57:58.182Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:57:58.182Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:57:58.182Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:57:58.187Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:58.187Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:57:58.187Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:57:58.187Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[debug] [2022-12-08T12:57:58.189Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-12-08T12:57:58.189Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-12-08T12:57:58.189Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true --> us-central1-geocode
+[debug] [2022-12-08T12:57:58.197Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:58.198Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=san%20francisco&mock=true, mapping to path=/?city=san%20francisco&mock=true"}}
+[debug] [2022-12-08T12:57:58.198Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T12:57:58.198Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:57:58.213Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:57:58.214Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 3.554826ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 3.554826ms"}}
+[info] i  functions: Finished "placesNearby" in 7.864053ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 7.864053ms"}}
+[debug] [2022-12-08T12:57:58.217Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T12:57:58.218Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T12:57:59.111Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:57:59.111Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:57:59.112Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:57:59.115Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:57:59.115Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:57:59.116Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:57:59.116Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:57:59.123Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:57:59.123Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 8.221401ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 8.221401ms"}}
+[debug] [2022-12-08T12:58:16.307Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T12:58:16.307Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T12:58:16.307Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T12:58:16.313Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T12:58:16.313Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=37.7749295,-122.4194155&mock=true, mapping to path=/?location=37.7749295,-122.4194155&mock=true"}}
+[debug] [2022-12-08T12:58:16.313Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T12:58:16.313Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T12:58:16.363Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T12:58:16.364Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 65.459278ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 65.459278ms"}}
+[debug] [2022-12-08T13:00:07.123Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:00:07.126Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:00:07.127Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=logs&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:00:07.143Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:00:07.144Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=logs&mock=true, mapping to path=/?city=logs&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=logs&mock=true, mapping to path=/?city=logs&mock=true"}}
+[debug] [2022-12-08T13:00:07.144Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:00:07.144Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:00:07.171Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:00:07.171Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 8.822426ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 8.822426ms"}}
+[debug] [2022-12-08T13:05:32.545Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:05:32.551Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:05:32.551Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:05:32.570Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:05:32.571Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true"}}
+[debug] [2022-12-08T13:05:32.571Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:05:32.571Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:05:32.601Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:05:32.601Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 7.863886ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 7.863886ms"}}
+[debug] [2022-12-08T13:05:32.791Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:05:32.801Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:05:32.801Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T13:05:32.833Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:05:32.833Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true"}}
+[debug] [2022-12-08T13:05:32.834Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T13:05:32.834Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T13:05:32.918Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T13:05:32.919Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 26.401271ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 26.401271ms"}}
+[debug] [2022-12-08T13:05:44.534Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:05:44.535Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:05:44.535Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=saw&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:05:44.539Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:05:44.540Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=saw&mock=true, mapping to path=/?city=saw&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=saw&mock=true, mapping to path=/?city=saw&mock=true"}}
+[debug] [2022-12-08T13:05:44.540Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:05:44.541Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 1.273214ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.273214ms"}}
+[debug] [2022-12-08T13:05:44.591Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:05:44.593Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T13:07:11.935Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:07:11.938Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:07:11.939Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:07:11.964Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:07:11.965Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true"}}
+[debug] [2022-12-08T13:07:11.965Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:07:11.965Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:07:12.070Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:07:12.073Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T13:07:12.090Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:07:12.090Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:07:12.091Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T13:07:12.110Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:07:12.112Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true"}}
+[debug] [2022-12-08T13:07:12.112Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T13:07:12.112Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Finished "geocode" in 106.533592ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 106.533592ms"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T13:07:12.587Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T13:07:12.589Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 153.184195ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 153.184195ms"}}
+[debug] [2022-12-08T13:07:52.244Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:07:52.245Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:07:52.245Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=dad&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:07:52.249Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:07:52.249Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=dad&mock=true, mapping to path=/?city=dad&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=dad&mock=true, mapping to path=/?city=dad&mock=true"}}
+[debug] [2022-12-08T13:07:52.249Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:07:52.250Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:07:52.257Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:07:52.259Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 2.451543ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 2.451543ms"}}
+[debug] [2022-12-08T13:08:23.518Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:08:23.519Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:08:23.519Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=dadad&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:08:23.536Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:08:23.536Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=dadad&mock=true, mapping to path=/?city=dadad&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=dadad&mock=true, mapping to path=/?city=dadad&mock=true"}}
+[debug] [2022-12-08T13:08:23.536Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:08:23.536Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[info] i  functions: Finished "geocode" in 2.353691ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 2.353691ms"}}
+[debug] [2022-12-08T13:08:23.588Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:08:23.589Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-08T13:08:30.706Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:08:30.707Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:08:30.707Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:08:30.739Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:08:30.739Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=antwerp&mock=true, mapping to path=/?city=antwerp&mock=true"}}
+[debug] [2022-12-08T13:08:30.740Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:08:30.740Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:08:30.748Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:08:30.748Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.99125ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.99125ms"}}
+[debug] [2022-12-08T13:08:30.797Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:08:30.797Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:08:30.839Z] Accepted request GET /meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true --> us-central1-placesNearby
+[debug] [2022-12-08T13:08:30.844Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:08:30.844Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/placesNearby?location=51.219448,4.402464&mock=true, mapping to path=/?location=51.219448,4.402464&mock=true"}}
+[debug] [2022-12-08T13:08:30.844Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-12-08T13:08:30.844Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-12-08T13:08:30.971Z] [worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-b243e6a7-f624-4b60-97e0-d9ec955a641c]: IDLE"}}
+[debug] [2022-12-08T13:08:30.975Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 56.325526ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 56.325526ms"}}
+[debug] [2022-12-08T13:09:11.969Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T13:09:11.969Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T13:09:11.969Z] Accepted request GET /meals-to-go-749bd/us-central1/geocode?city=london&mock=true --> us-central1-geocode
+[debug] [2022-12-08T13:09:11.983Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T13:09:11.984Z] [functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=london&mock=true, mapping to path=/?city=london&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-749bd/us-central1/geocode?city=london&mock=true, mapping to path=/?city=london&mock=true"}}
+[debug] [2022-12-08T13:09:11.984Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-12-08T13:09:11.984Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-12-08T13:09:11.996Z] [worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2359d65b-8f1c-4d47-863d-ca490588fcfd]: IDLE"}}
+[debug] [2022-12-08T13:09:11.996Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 3.174218ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 3.174218ms"}}
