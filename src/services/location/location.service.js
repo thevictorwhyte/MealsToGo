@@ -2,13 +2,9 @@ import camelize from "camelize";
 import { host } from "../../utils/env";
 
 export const locationRequest = (searchTerm) => {
-  return fetch(`${host}/geocode?city=${searchTerm}`)
-    .then((res) => {
-      return res.json();
-    })
-    .then((data) => {
-      return JSON.parse(data);
-    });
+  return fetch(`${host}/geocode?city=${searchTerm}`).then((res) => {
+    return res.json();
+  });
 };
 
 export const locationTransform = (result) => {
