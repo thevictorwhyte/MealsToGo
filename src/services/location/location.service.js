@@ -2,11 +2,18 @@ import camelize from "camelize";
 import { host, isMock } from "../../utils/env";
 
 export const locationRequest = (searchTerm) => {
-  return fetch(`${host}/geocode?city=${searchTerm}&mock=${isMock}`)
-    .then((res) => {
+  if (isMock) {
+    return fetch(`${host}/geocode?city=${searchTerm}&mock=${isMock}`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => JSON.parse(data));
+  }
+  return fetch(`${host}/geocode?city=${searchTerm}&mock=${isMock}`).then(
+    (res) => {
       return res.json();
-    })
-    .then((data) => JSON.parse(data));
+    }
+  );
 };
 
 export const locationTransform = (result) => {
