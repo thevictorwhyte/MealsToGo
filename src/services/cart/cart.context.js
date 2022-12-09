@@ -11,6 +11,8 @@ export const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [restaurant, setRestaurant] = useState(null);
   const [sum, setSum] = useState(0);
+  const [card, setCard] = useState(null);
+
 
   useEffect(() => {
     if (!cart.length) {
@@ -36,11 +38,20 @@ export const CartContextProvider = ({ children }) => {
   const clear = () => {
     setCart([]);
     setRestaurant(null);
+    setCard(null);
   };
 
   return (
     <CartContext.Provider
-      value={{ addToCart: add, clearCart: clear, restaurant, cart, sum }}
+      value={{
+        addToCart: add,
+        clearCart: clear,
+        restaurant,
+        cart,
+        sum,
+        card,
+        setCard,
+      }}
     >
       {children}
     </CartContext.Provider>

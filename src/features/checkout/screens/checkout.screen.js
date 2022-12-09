@@ -19,15 +19,17 @@ import {
 import { RestaurantInfoCard } from "../../restaurants/components/restaurant-info-card.component";
 import { payRequest } from "../../../services/checkout/checkout.service";
 
-export const CheckoutScreen = () => {
-  const { cart, restaurant, sum, clearCart } = useContext(CartContext);
+export const CheckoutScreen = ({ navigation }) => {
+  const { cart, restaurant, sum, clearCart, card, setCard } =
+    useContext(CartContext);
   const [name, setName] = useState("");
-  const [card, setCard] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const onPay = () => {
     if (!card || !card.id) {
-      console.log("something error");
+      navigation.navigate("CheckoutError", {
+        error: "Please fill in a valid credit card",
+      });
       return;
     }
     setIsLoading(true);
@@ -35,9 +37,14 @@ export const CheckoutScreen = () => {
     payRequest(card.id, sum, name)
       .then((result) => {
         setIsLoading(false);
+        clearCart();
+        navigation.navigate("CheckoutSuccess");
       })
       .catch((err) => {
         setIsLoading(false);
+        navigation.navigate("CheckoutError", {
+          error: "Something went wrong processig your payment.",
+        });
       });
   };
 
@@ -62,8 +69,13 @@ export const CheckoutScreen = () => {
             <Text>Your Order</Text>
           </Spacer>
           <List.Section>
-            {cart.map(({ item, price }) => {
-              return <List.Item title={`${item} - ${price / 100}`} />;
+            {cart.map(({ item, price }, i) => {
+              return (
+                <List.Item
+                  key={`${item}-${i}`}
+                  title={`${item} - ${price / 100}`}
+                />
+              );
             })}
           </List.Section>
           <Text>Total: {sum / 100}</Text>
@@ -77,7 +89,15 @@ export const CheckoutScreen = () => {
         />
         <Spacer position="top" size="small">
           {name.length > 0 && (
-            <CreditCardInput name={name} onSuccess={(card) => setCard(card)} />
+            <CreditCardInput
+              name={name}
+              onSuccess={(card) => setCard(card)}
+              onError={() =>
+                navigation.navigate("CheckoutError", {
+                  error: "Something went wrong processing credit card",
+                })
+              }
+            />
           )}
         </Spacer>
 

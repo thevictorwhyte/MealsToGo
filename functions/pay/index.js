@@ -18,7 +18,6 @@ module.exports.payRequest = (request, response, stripeClient) => {
       response.json(paymentIntent);
     })
     .catch((err) => {
-      console.log(err);
       response.status(400);
       response.send(err);
     });
