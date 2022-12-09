@@ -4,7 +4,7 @@ import { CardField } from "@stripe/stripe-react-native";
 import { cardTokenRequest } from "../../../services/checkout/checkout.service";
 
 // pk_test_51MCpSzJrdPLkv7iH3pKlyUESPdPWgFZkAYUdkTq9v3FHGWmhr7JfXDNYaGs5fwLbCohwXRafb09b2DwcpqdllkBA00GlLQNdfJ
-export const CreditCardInput = ({ name = "Victor Whyte" }) => {
+export const CreditCardInput = ({ name, onSuccess }) => {
   const onChange = async (cardDetails) => {
     try {
       const { complete, number, expiryMonth, cvc, expiryYear } = cardDetails;
@@ -19,7 +19,7 @@ export const CreditCardInput = ({ name = "Victor Whyte" }) => {
           name: name,
         };
         const info = await cardTokenRequest(card);
-        console.log("info", info);
+        onSuccess(info);
       }
     } catch (err) {
       console.log("err", err);
@@ -38,9 +38,9 @@ export const CreditCardInput = ({ name = "Victor Whyte" }) => {
         textColor: "#000000",
       }}
       style={{
-        width: "100%",
+        width: "90%",
         height: 50,
-        marginVertical: 30,
+        // marginVertical: 30,
       }}
       onCardChange={onChange}
     />
